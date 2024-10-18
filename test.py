@@ -11,12 +11,25 @@ isinstance(x, np.ndarray)
 y = np.array([109, 17, 108, 224]); y
 y = y.view(GF); y
 GF.repr("poly"); x
-print (x)
+print ('polynomial representation',x)
+print ('x+y', x + y)
+print ('x-y', x - y)
+print ('x*y', x * y)
+print ('x/y', x / y)
+print ('sqrt', np.sqrt(x))
+
 GF.repr("power"); x
-print (x)
+print ('astmed',x)
+print ('x+y', x + y)
+print ('x-y', x - y)
+print ('x*y', x * y)
+print ('x/y', x / y)
+print ('sqrt', np.sqrt(x))
+
 GF.repr("int");
-print (x)
-print (x + y)
-print (x - y)
-print (x * y)
-print (x / y)
+print ('integer representation', x)
+print ('x+y', x + y)
+print ('x-y', x - y)
+print ('x*y', x * y)
+print ('x/y', x / y)
+print ('sqrt', np.sqrt(x))
