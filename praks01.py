@@ -16,6 +16,7 @@ a = GF16.primitive_element
 #vastuvõetud koodsõna, korpusest GF16
 #NB see on teadlikult vigane sqna, et teha veaparandust
 y = ff.Poly([0,0,1,0,0,0,0,1,1,0,0,1,0,0,1],field=GF16)
+g = ff.Poly([1,1,1,0,1,0,0,0,1],field=GF16)
 
 yx = lambda x: x**12+x**7+x**6+x**3+x**0
 S1 = yx(a)
@@ -39,3 +40,12 @@ print('lahend', Z)
 ep = lambda x: Z[0]+x+x**2
 #k + primitiivse polynoomi aste kohal k
 print(list([[k,ep(a**k)] for k in range(0,15)]))
+# vea polynoom genereerida
+
+#esialgu kirjutame k2sitsi v2lja
+e = ff.Poly([0,0,0,0,0,1,0,1,0,0,0,0,0,0,0],field=GF16)
+C = y + e
+print ('corrected word:', C)
+# dekodeeritud sqnum 
+DC,r = divmod( C , g)
+print ('Sõnum ja jääk', DC, r)
