@@ -11,6 +11,8 @@ print(f"5^2023 (mod 7) järgi on {result}.")
 
 #y2 does not compute 14 > 7 
 # 14 = 2 x 7 
+# result = GF(14)**2023
+# print(f"14^2023 (mod 7) järgi on {result}.")
 
 # C === 2 mod 7 järgi
 # C === 7 mod 7 järgi
