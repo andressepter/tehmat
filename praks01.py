@@ -1,6 +1,9 @@
 #impordime kasutatavad teegid
 import numpy as np
 import galois as ff
+import bchlib as bch
+help(bchlib)
+
 #defineerime korpuse
 GF = ff.GF(3**5)
 GF2 = ff.GF(2)
