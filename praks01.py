@@ -1,4 +1,7 @@
 #impordime kasutatavad teegid
+#this line is needed ONLY when you want manually append python 
+#virtual environment library path(s)
+import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/')
 import numpy as np
 import galois as ff
 import bchlib as bch
