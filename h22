@@ -1,0 +1,13 @@
+import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/')
+import galois as galois
+import numpy as np
+
+#korpus
+korpus2 = galois.GF(2,3)
+#korpus2 = galois.GF(2,3)???
+
+f=galois.Poly([1,1,1], field=korpus2);
+print ("polynoom ", f)
+print ("Taandumatu?", f.is_irreducible())
+
+print(korpus2.properties)
