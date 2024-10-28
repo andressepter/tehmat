@@ -2,12 +2,16 @@ import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/'
 import galois as galois
 import numpy as np
 
-#korpus
-korpus2 = galois.GF(2,3)
+#korpus 3st elemendist
+# 1 elementide arv, teine on aste
+korpus3 = galois.GF(3)
 #korpus2 = galois.GF(2,3)???
 
-f=galois.Poly([1,1,1], field=korpus2);
-print ("polynoom ", f)
-print ("Taandumatu?", f.is_irreducible())
+f=galois.Poly([1,0,1], field=korpus3);
+#print ("polynoom ", f)
+#print ("Taandumatu?", f.is_irreducible())
 
-print(korpus2.properties)
+print(korpus3.properties)
+
+korpus3_2 = galois.GF(3,2,f) #alternatiivne kirjutus 3**2
+print(korpus3_2.properties)
