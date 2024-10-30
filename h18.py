@@ -13,6 +13,7 @@ print(f"5^2023 (mod 7) järgi on {result}.")
 # 14 = 2 x 7 
 #result = GF(14)**2023
 #print(f"14^2023 (mod 7) järgi on {result}.")
+#astendada 2 korda 
 
 
 # C === 2 mod 7 järgi
