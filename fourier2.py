@@ -3,7 +3,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-image_filename = "Earth.png"
+image_filename = "/home/side33/tehmat/Earth.png"
 
 def calculate_2dft(input):
     ft = np.fft.ifftshift(input)
@@ -82,10 +82,10 @@ individual_grating = np.zeros(
 idx = 0
 
 # All steps are displayed until display_all_until value
-display_all_until = 200
+display_all_until = 50
 # After this, skip which steps to display using the
 # display_step value
-display_step = 10
+display_step = 25
 # Work out index of next step to display
 next_display = display_all_until + display_step
 
