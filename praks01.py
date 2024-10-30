@@ -4,8 +4,7 @@
 import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/')
 import numpy as np
 import galois as ff
-import bchlib as bch
-help(bchlib)
+
 
 #defineerime korpuse
 GF = ff.GF(3**5)

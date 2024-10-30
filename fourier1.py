@@ -4,7 +4,7 @@ import galois as galois
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('TkAgg')
+#matplotlib.use('TkAgg')
 
 x = np.arange(-500, 501, 1)
 
