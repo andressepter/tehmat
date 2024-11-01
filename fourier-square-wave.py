@@ -126,5 +126,6 @@ class FS():
 if __name__ == '__main__':
     
     # Circles, Cycles
-    fs = FS(10, 6)
-    fs.PlotFS()
+    for i in range (2,20):
+     fs = FS(i, 5)
+     fs.PlotFS()
