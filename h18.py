@@ -11,7 +11,7 @@ print(f"5^2023 (mod 7) järgi on {result}.")
 
 #y2 does not compute 14 > 7 
 # 14 = 2 x 7 
-#result = GF(14)**2023
+#result = GF(2)*GF(7)
 #print(f"14^2023 (mod 7) järgi on {result}.")
 #astendada 2 korda 
 
