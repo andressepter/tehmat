@@ -1,0 +1,14 @@
+import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/')
+import galois as galois
+import numpy as np
+# Define the Galois field
+
+korpus2_6 = galois.GF(2**6)
+
+# Example vectors
+vector1 = korpus2_6([0, 1, 1,0,1,0])
+vector2 = korpus2_6([1, 1, 0,1,0,0])
+
+# Compute Hamming distance
+hamming_distance = sum(v1 != v2 for v1, v2 in zip(vector1, vector2))
+print(f"Hamming distance: {hamming_distance}")

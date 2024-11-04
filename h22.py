@@ -30,3 +30,4 @@ for element in elements:
     print (elements[4]*element)
     
 #fancy grid + galois.poly ei mängi koos
+# ilusama tabeli tegemist vaata naide24.py
