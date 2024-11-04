@@ -34,14 +34,16 @@ for codeword in codewords:
 
 def hamming_distance(codeword1, codeword2):
     return sum(codeword1 != codeword2)
-
-num_codewords = len(codewords)
+#NB siin tuleb j2lgida, kas indeks algab 0 v6i 1 
+num_codewords = len(codewords)-1
 
 distances = np.zeros(num_codewords, dtype=int)
 
 for i in range((len(codewords)-1)):
     distance = hamming_distance(codewords[i], codewords[i+1]) 
+    print (codewords[i])
+    print (codewords[i+1])
     print (distance)
     distances[i]=distance
 
-print (np.min(distances))
+print ("vähim kaugus:", np.min(distances))
