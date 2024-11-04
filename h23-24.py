@@ -1,4 +1,4 @@
-#23--26
+#23--24
 import sys; sys.path.append('/home/asepter/.local/lib/python3.10/site-packages/')
 import galois as galois
 import numpy as np
@@ -12,7 +12,7 @@ for element in elements:
 
 #redefine for clarity
 korpus2_3 = galois.GF(2**3)
-vectors = [korpus2_3([1, 0, 0]), korpus2_3([1, 1, 1]),korpus2_3([0, 0, 0])]
+vectors = [korpus2_3([1, 0, 0]), korpus2_3([1, 1, 1])]
         
 def linear_combinations(vectors, coefficients): 
     result = korpus2_3([0, 0, 0]) 
