@@ -35,7 +35,7 @@ for codeword in codewords:
 def hamming_distance(codeword1, codeword2):
     return sum(codeword1 != codeword2)
 
-for i in range(len(codewords)):
+for i in range((len(codewords)-1)):
     if i == len(codewords):
         break
 distance = hamming_distance(codewords[i], codewords[i+1]) 
