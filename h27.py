@@ -35,8 +35,11 @@ for codeword in codewords:
 def hamming_distance(codeword1, codeword2):
     return sum(codeword1 != codeword2)
 
+num_codewords = len(codewords)
+
+distances = np.zeros(num_codewords, type=int)
+
 for i in range((len(codewords)-1)):
-    if i == len(codewords):
-        break
-distance = hamming_distance(codewords[i], codewords[i+1]) 
-print (distance)
+    distance = hamming_distance(codewords[i], codewords[i+1]) 
+    distances[i]=distance
+    
