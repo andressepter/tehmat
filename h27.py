@@ -37,9 +37,11 @@ def hamming_distance(codeword1, codeword2):
 
 num_codewords = len(codewords)
 
-distances = np.zeros(num_codewords, type=int)
+distances = np.zeros(num_codewords, dtype=int)
 
 for i in range((len(codewords)-1)):
     distance = hamming_distance(codewords[i], codewords[i+1]) 
+    print (distance)
     distances[i]=distance
-    
+
+print (np.min(distances))
