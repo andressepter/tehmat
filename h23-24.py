@@ -12,7 +12,7 @@ for element in elements:
 # 2.6
 
 #redefine for clarity
-korpus2_3 = galois.GF(2**3)
+korpus2_3 = galois.GF(2)
 vectors = [korpus2_3([1, 0, 0]), korpus2_3([1, 1, 1])]
         
 def linear_combinations(vectors, coefficients): 
@@ -21,6 +21,7 @@ def linear_combinations(vectors, coefficients):
         result += coeff * vec 
     return result
 
+# korpus oli vale
 #koik
 for a in range (3):
     for b in range (3):
