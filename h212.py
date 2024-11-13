@@ -1,0 +1,1 @@
+#korduv, tehniline
