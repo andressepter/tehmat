@@ -22,7 +22,7 @@ G=np.array([
 ])
 
 # Received message
-received_message = np.array([0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0,1])
+received_message = np.array([1,0,1,0,1,1,1,0,0,1,1,0,0,0,0])
 
 # Calculate the syndrome
 syndrome = np.dot(received_message, H.T) % 2
