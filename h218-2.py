@@ -1,6 +1,6 @@
 import numpy as np
 import galois as FF
-gf2 = FF.GF(2)
+gf2 = FF.GF(7**2)
 G=gf2([[1,0,1,1,0,1,1],
        [0,1,0,1,1,0,1]
        ])
@@ -12,6 +12,6 @@ print(I)
 H=np.concatenate((A.T,I), axis=1)
 print("H:",H)
 #Kontroll:
-print(np.matmul(G,H.T))
+#print(np.matmul(G,H.T))
 
 
