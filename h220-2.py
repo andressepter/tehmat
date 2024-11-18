@@ -29,8 +29,8 @@ G = GF([
 ])
 
 # Received message
-#EI KLAPI! 
-received_message = GF([0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0,1])
+#tegelt on korras
+received_message = GF([1,0,1,0,1,1,1,0,0,1,1,0,0,0,0])
 
 # Calculate the syndrome
 syndrome = received_message @ H.T

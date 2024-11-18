@@ -1,4 +1,5 @@
 import numpy as np
+#see kood on korrektne
 
 # Define the codewords matrix C for Hamming (7,2) code
 C = np.array([

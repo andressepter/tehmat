@@ -9,3 +9,4 @@ bch=galois.BCH(15,7)
 y=bch.field([1,1,1,1,1,1,1,1,1,1,0,1,1,0,0])
 msg, err = bch.decode(y, errors=True)
 print("message ", msg, "\t vigade arv ", err)
+#v'himad kaugused, koods]nad
