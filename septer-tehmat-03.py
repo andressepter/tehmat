@@ -5,11 +5,14 @@ import numpy as np
 
 import matplotlib.pyplot as plt
 
-# Define the signal spectrum u charon
+
 u_charon = np.array([1, 1, -1, -1, 1])
 
 # Calculate the convolution of the signal with itself
 convolution = np.convolve(u_charon, u_charon)
+
+#saaks teha ka manuaalselt, signall "tagurpidi" keerata ja nihutada ja korrutada ylekattuvused
+#tegin funktsiooniga 
 
 print (convolution)
 
